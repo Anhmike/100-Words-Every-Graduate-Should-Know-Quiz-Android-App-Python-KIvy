@@ -1,0 +1,2 @@
+# 100-Words-Every-Graduate-Should-Know-Quiz-Android-App-Python-KIvy
+A simple quiz engine that can easily be adapted to build your vocabulary. You can build your own dictionary files and compile your own APK using this template. 
