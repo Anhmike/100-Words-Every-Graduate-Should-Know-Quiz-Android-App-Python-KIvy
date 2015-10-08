@@ -1,0 +1,100 @@
+abjure,renounce
+abrogate,repeal
+abstemious,temperance
+acumen,shrewdness
+antebellum,pre-war
+auspicious,favourable
+belie,contradict
+bellicose,aggressive
+bowdlerize,censor
+chicanery,trickery
+chromosome,genes
+churlish,rude
+circumlocution,indirect
+circumnavigate,go around
+deciduous,transientness
+deleterious,damaging
+diffident,shy
+enervate,exhaust
+enfranchise,liberate
+epiphany,revelation
+equinox,equal day and night
+euro,money
+evanescent,transient
+expurgate,redact
+facetious,flippant
+fatuous,silly
+feckless,incompetent
+fiduciary,trust
+filibuster,blocking
+gamete,marriage
+gauche,awkward
+gerrymander,manipulate politics
+hegemony,dominion
+hemoglobin,blood
+homogeneous,similar
+hubris,arrogance
+hypotenuse,long side
+impeach,accuse
+incognito,anonymity
+incontrovertible,indisputable
+inculcate,teach
+infrastructure,buildings
+interpolate,add
+irony,sarcasm
+jejune,naive
+kinetic,movement
+kowtow,grovel
+laissez faire,deregulation
+lexicon,list
+loquacious,talkative
+lugubrious,sad
+metamorphosis,mutate
+mitosis,divide
+moiety,portion
+nanotechnology,molecular-technology
+nihilism,negativity
+nomenclature,naming
+nonsectarian,non-religious
+notarize,attested
+obsequious,grovelling
+oligarchy,elite
+omnipotent,almighty
+orthography,spelling
+oxidize,add oxygen
+parabola,curvature
+paradigm,pattern
+parameter,boundary
+pecuniary,economic
+photosynthesis,absorb sunlight
+plagiarize,steal
+plasma,fluid
+polymer,molecular structure
+precipitous,steep
+quasar,remote object
+quotidian,regularly
+recapitulate,repeat
+reciprocal,mutual
+reparation,amend
+respiration,breathe
+sanguine,optimistic
+soliloquy,speech
+subjugate,conquer
+suffragist,feminist
+supercilious,arrogant
+tautology,duplicate
+taxonomy,classification
+tectonic,earth's crust
+tempestuous,turbulent
+thermodynamics,heat
+totalitarian,bully
+unctuous,flattery
+usurp,seize
+vacuous,empty
+vehement,passionate
+vortex,whirlwind
+winnow,filter
+wrought,shape
+xenophobe,fear of foreigners
+yeoman,farmer
+ziggurat,tower

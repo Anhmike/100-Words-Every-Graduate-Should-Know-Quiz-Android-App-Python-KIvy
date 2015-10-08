@@ -1,0 +1,56 @@
+# Created by Troy J watson
+# Tue Aug  4 10:51:16 AEST 2015
+<ExternalLayout>:
+        orientation: 'vertical'
+        padding: 10
+        BoxLayout:
+                orientation: 'vertical'
+                BoxLayout:
+                        orientation: 'horizontal'
+                        Label:
+                                id: progress_label
+                                text: "0/0"
+                                markup: True
+                                font_size: 30
+                        Label:
+                                id: status_label
+                                text: "100 Words Every Graduate Should Know"
+                                markup: True
+                                font_size: 30
+                        Label:
+                                id: score_label
+                                text: "0"
+                                markup: True
+                                font_size: 30
+                Label: 
+                        id: title_label
+                        text: "Vocab Quiz"
+                        markup: True
+                        font_size: 30
+        Label:
+                id: question_label
+                text: "elephant"
+                markup: True
+                font_size: 100
+        BoxLayout:
+                orientation: 'vertical'
+                Button:
+                        id: a_label
+                        text: "press any button to continue..."
+                        on_press: root.chooseAnswer(1)
+                Button:
+                        id: b_label
+                        text: ""
+                        on_press: root.chooseAnswer(2)
+                Button:
+                        id: c_label
+                        text: ""
+                        on_press: root.chooseAnswer(3)
+                Button:
+                        id: d_label
+                        text: ""
+                        on_press: root.chooseAnswer(4)
+                Button:
+                        id: e_label
+                        text: ""
+                        on_press: root.chooseAnswer(5)
