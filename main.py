@@ -17,12 +17,13 @@ A simple quiz to help a student expand their vocabularly.
 This program is made for Android using Kivy-Python
 '''
 
-#TODO add button to reset program
-#TODO show high scores on screen from a button
-#TODO use screen manager
+# Mon Oct 12 19:10:42 AEDT 2015
+#TODO add padding to buttons to make them easy to press for mobile phones
+#TODO split answer text to two lines to make it compatible for mobile phones
 
-#TODO get rid of pending label while running
-#TODO show score at end of run
+# Thu Oct  8 16:18:05 AEDT 2015
+#TODO add button to reset program
+#TODO use screen manager to show a list of high scores
 
 class ExternalLayout(BoxLayout):
         
@@ -81,7 +82,7 @@ class ExternalLayout(BoxLayout):
                         # if answer correct display CORRECT on screen
                         if (self.vocabBuilder.isCorrect(int(reply) - 1)):
                                 print 'Correct'
-                                self.titleLabel.text = "[color=00ff08]Correct[/color] "  + self.vocabBuilder.question + " = " + self.vocabBuilder.answer
+                                self.titleLabel.text = "[color=00ff08]Correct[/color] "  + self.vocabBuilder.question + " = \n" + self.vocabBuilder.answer
                                 self.scoreLabel.text = str(self.vocabBuilder.getScore()) + " correct"
                                 
                         # if answer is incorrect display INCORRECT on screen
@@ -89,12 +90,13 @@ class ExternalLayout(BoxLayout):
                                 print 'Incorrect'
                                 print 'Answer', self.vocabBuilder.answer
                                 print 'Current score', str(self.vocabBuilder.getScore())
-                                self.titleLabel.text = "[color=ff0000]Incorrect[/color] " + self.vocabBuilder.question + " = " + self.vocabBuilder.answer
+                                self.titleLabel.text = "[color=ff0000]Incorrect[/color] " + self.vocabBuilder.question + " = \n" + self.vocabBuilder.answer
                                 self.scoreLabel.text = str(self.vocabBuilder.getScore()) + " correct"
 
-                        # when there's no more questions display score, save score
+                        # when there are no more questions display score, save score
                         # and go to idle mode
                         if self.vocabBuilder.noMoreLeft():
+                                # Thu Oct  8 16:19:35 AEDT 2015
                                 #TODO go to the scores screen
                                 print 'Questions correct', str(self.vocabBuilder.getScore()), 'out of 100'
                                 self.vocabBuilder.saveHighScore()
@@ -117,7 +119,6 @@ class KivyStuff(App):
                 
                 Builder.load_file('main.kv')
                 externalLayout = ExternalLayout()
-                #externalLayout.loadLibraries()
                 externalLayout.showTopScore()
                 return externalLayout
               

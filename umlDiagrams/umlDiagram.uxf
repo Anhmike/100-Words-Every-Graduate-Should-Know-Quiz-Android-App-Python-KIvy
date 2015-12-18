@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>270</y>
+      <w>330</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;VocabBuilder&gt;&gt;
+Package::VocabBuilder
+--
++ currentWord: int = 0
++ anyMore: Boolean = True
++ score: int = 0
++ words: List&lt;String&gt;
++ question: String
++ answer: String
++ answers: List&lt;String&gt;
+- dict: List&lt;String&gt; 
+
+--
++ convertWords()
++ loadWords()
+- loadDict()
++ getRandomWord() : String
+- shuffleWords()
++ loadQuestion()
++ noMoreLeft() : Boolean
++ isCorrect(selection : String) : Boolean
++ addScore(selection : String))
++ getScore () : int
++ deleteHighScoreFile()
++ saveScore()
++ getHighScore() : int
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>590</x>
+      <y>270</y>
+      <w>340</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ExternalLayout&gt;&gt;
+Package::GradGui
+--
+-id: Long
+-idleMode: Boolean
+aLabel: String
+bLabel: String
+cLabel: String
+dLabel: String
+eLabel: String
+progressLabel: String
+statusLabel: String
+scoreLabel: String
+questionLabel: String
+titleLabel: String
+--
+
+loadLibraries()
+showTopScore()
+chooseAnswer(reply: String, *args: String)
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>300</x>
+      <y>320</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..M
+m2=1..1
+manages multiple-choice quiz for &gt;</panel_attributes>
+    <additional_attributes>30;50;290;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>620</x>
+      <y>0</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;KivyUI&gt;&gt;
+Package::GradGui
+--
+- externalLayout : ExternalLayout
+--
+- build() : ExternalLayout
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>60</x>
+      <y>130</y>
+      <w>154</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>80;30;80;140</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>610</x>
+      <y>100</y>
+      <w>290</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=1..1
+loads UI on top of Kivy App base &gt;
+</panel_attributes>
+    <additional_attributes>150;30;150;170</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>40</x>
+      <y>60</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>_random: Class_
+--
+randint() : int
+shuffle() : List&lt;int&gt;
+[Used for randomizing the
+quiz lists]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1120</x>
+      <y>340</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_Kivy.uix: Class_
+--
+[Kivy UI elements]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1120</x>
+      <y>470</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_Kivy.lang: Class_
+--
+[Kivy Language class to 
+allow for reading of *.kv
+files to create UI elements]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1090</x>
+      <y>30</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_Kivy.app: Class_
+--
+
+[The base class for the Kivy
+library]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>900</x>
+      <y>330</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>220;50;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>900</x>
+      <y>460</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>220;50;30;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>870</x>
+      <y>20</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>220;50;30;50</additional_attributes>
+  </element>
+</diagram>

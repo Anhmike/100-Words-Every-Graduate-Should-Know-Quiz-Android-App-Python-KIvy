@@ -2,14 +2,16 @@ from random import randint
 from random import shuffle
 import re
 '''                                                                                                    
-VocabBuilder v1.0
+VocabBuilder
 
 By Troy J. Watson
-Wed Aug  5 09:30:54 AEST 2015
+Project started: Wed Aug  5 09:30:54 AEST 2015
 An object to organize a multiple choice quiz. 
 '''
 
 #TODO weed out vestigial features
+# Thu Oct  8 16:24:08 AEDT 2015
+#TODO get rid of print statements
 
 class VocabBuilder(object):
 
@@ -24,6 +26,10 @@ class VocabBuilder(object):
 
 	def loadWords(self):
 		# gets list of 100 words and 100 meanings
+		# however, the quiz could handle more words
+		# Thu Oct  8 16:21:45 AEDT 2015
+		#TODO make this object compatible with any number of words
+		#TODO this requires making the gui rely on the number here
 		fileName = open("gradWords.txt", "r")
 		data = fileName.read()
 		fileName.close()
@@ -54,8 +60,6 @@ class VocabBuilder(object):
 		# creates a question, answer and answers variables
 		# it keeps the real answer separate to be able to remember which one is correct
 		entry = self.words[self.currentWord].split(',')
-		#print entry
-		#print self.currentWord
 		question = entry[0]
 		answer = entry[1]
 		answers = [self.getRandomWord(), self.getRandomWord(), self.getRandomWord(), self.getRandomWord(), answer]
@@ -86,11 +90,12 @@ class VocabBuilder(object):
 		return self.score
 
 	def deleteHighScoreFile(self):
+		# Thu Oct  8 16:20:37 AEDT 2015
+		#TODO add this to main program, to reset high scores
 		# create the high scores file and delete anything already there
 		fileName = open('highScores.txt', 'w')
 		fileName.write("High Scores\n")
 		fileName.close()
-
 
         def saveHighScore(self):
                 # save a new highscore
